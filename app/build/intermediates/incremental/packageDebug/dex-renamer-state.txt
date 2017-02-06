@@ -1,0 +1,7 @@
+#Mon Feb 06 21:00:12 ICT 2017
+base.0=D\:\\Android Studio Project\\PlantFactory\\PharmacyProject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_3aef751f926fc244eeb816b49e144e75f90aa4b6
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\Android Studio Project\\PlantFactory\\PharmacyProject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_d4e06e2832cd5bb64ec77ed007a25684f61c59e5\\classes.dex
+base.1=D\:\\Android Studio Project\\PlantFactory\\PharmacyProject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_d4e06e2832cd5bb64ec77ed007a25684f61c59e5
+file.0=D\:\\Android Studio Project\\PlantFactory\\PharmacyProject\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_3aef751f926fc244eeb816b49e144e75f90aa4b6\\classes.dex

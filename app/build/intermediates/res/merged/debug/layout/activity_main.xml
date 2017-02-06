@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="th.ac.camt.mmit.thanawat.pharmacyproject.view.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/information_toolbar_title"
+        app:titleTextColor="@android:color/white" />
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="@dimen/activity_horizontal_margin">
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/margin_eigth"
+               app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/information_edit_text_hint_code" />
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/margin_eigth"
+               app:hintTextAppearance="@style/TextAppearance.AppCompat">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/information_edit_text_hint_name" />
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/information_edit_text_hint_age" />
+           </android.support.design.widget.TextInputLayout>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/information_edit_text_hint_gender" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+               <RadioGroup
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="-7dp"
+                   android:orientation="horizontal">
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/information_radio_gender_male" />
+
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/information_radio_gender_female" />
+               </RadioGroup>
+           </LinearLayout>
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/information_edit_text_hint_special_population" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="5">
+
+               <CheckBox
+                   android:id="@+id/checkbox_pregnancy"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="-7dp"
+                   android:layout_weight="3"
+                   android:text="@string/information_checkbox_pregnancy"
+                   android:textSize="@dimen/checkbox_text_size" />
+
+               <CheckBox
+                   android:id="@+id/checkbox_feeding"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:text="@string/information_checkbox_breastfeeding"
+                   android:textSize="@dimen/checkbox_text_size" />
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="5">
+
+               <CheckBox
+                   android:id="@+id/checkbox_elder"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="-7dp"
+                   android:layout_weight="3"
+                   android:text="@string/information_checkbox_elder"
+                   android:textSize="@dimen/checkbox_text_size" />
+
+               <CheckBox
+                   android:id="@+id/checkbox_dusting"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:text="@string/information_checkbox_dusting"
+                   android:textSize="@dimen/checkbox_text_size" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:weightSum="5">
+
+               <CheckBox
+                   android:id="@+id/checkbox_allergy"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="-7dp"
+                   android:layout_weight="3"
+                   android:text="@string/information_checkbox_allergy"
+                   android:textSize="@dimen/checkbox_text_size" />
+
+               <CheckBox
+                   android:id="@+id/checkbox_other"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:text="@string/information_checkbox_other"
+                   android:textSize="@dimen/checkbox_text_size" />
+           </LinearLayout>
+
+           <EditText
+               android:id="@+id/edt_other"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/activity_vertical_margin"
+               android:hint="@string/information_edit_text_hint_special_population_other"
+               android:visibility="gone" />
+
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/margin_eigth">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/information_edit_text_hint_symtomp" />
+           </android.support.design.widget.TextInputLayout>
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="@dimen/margin_eigth">
+
+               <android.support.design.widget.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="@string/information_edit_text_hint_medicine" />
+           </android.support.design.widget.TextInputLayout>
+
+
+           <Button
+               android:layout_gravity="center"
+               android:text="@string/information_btn_save"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>
+
+
